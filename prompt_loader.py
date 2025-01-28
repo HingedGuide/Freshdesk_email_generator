@@ -6,6 +6,7 @@ class PromptLoader:
     def __init__(self):
         self.prompts = self._load_prompts()
 
+    # Read the prompts from the prompts.json file
     def _load_prompts(self):
         try:
             prompts_path = Path(__file__).parent / "prompts.json"
@@ -14,6 +15,7 @@ class PromptLoader:
         except (FileNotFoundError, json.JSONDecodeError) as e:
             raise RuntimeError(f"Failed to load prompts: {str(e)}")
 
+    # retrieve the prompt so that it can be used
     def get_prompt(self, language: str, customer_content: str, employee_notes: str) -> str:
         lang_data = self.prompts.get(language.lower(), self.prompts['en'])
 
