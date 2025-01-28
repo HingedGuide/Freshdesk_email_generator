@@ -1,63 +1,65 @@
+
 # AI Email Generator for Freshdesk
 
-Dit project genereert AI-gestuurde e-mailreacties op Freshdesk-supporttickets met behulp van het Mistral-model via Ollama. Het bevat een interactieve GUI en ondersteunt meerdere talen.
+This project generates AI-driven email responses to Freshdesk support tickets using the Mistral model via Ollama. It features an interactive GUI and supports multiple languages.
 
-## 📌 Functionaliteiten
-- Ophalen en verwerken van Freshdesk-tickets
-- Automatische taalherkenning
-- AI-gegenereerde e-mailantwoorden met Mistral
-- Interactieve GUI voor gebruiksgemak
-- Ondersteuning voor meertalige e-mails
+## 📌 Features
+- Fetching and processing Freshdesk tickets
+- Automatic language detection
+- AI-generated email responses with Mistral
+- Interactive GUI for ease of use
+- Multilingual email support
 
-## 📂 Bestanden
-- `email_generator.py` – Hoofdscript dat het e-mailgeneratieproces beheert
-- `prompt_loader.py` – Laadt en verwerkt prompt-templates
-- `email_gui.py` – Interactieve GUI voor gebruikers
-- `prompts.json` – Bevat promptstructuren voor AI-generatie
-- `requirements.txt` – Lijst met vereiste afhankelijkheden
+## 📂 Files
+- `email_generator.py` – Main script managing the email generation process
+- `prompt_loader.py` – Loads and processes prompt templates
+- `email_gui.py` – Interactive GUI for users
+- `prompts.json` – Contains prompt structures for AI generation
+- `requirements.txt` – List of required dependencies
 
-## 🛠 Installatie
-### 1. Vereisten installeren
-Zorg ervoor dat je Python geïnstalleerd hebt (versie 3.8+ aanbevolen).
+## 🛠 Installation
+### 1. Install Requirements
+Ensure you have Python installed (version 3.8+ recommended).
 
 ```sh
 pip install -r requirements.txt
 ```
 
-### 2. Ollama en Mistral installeren
-Dit project vereist het **Mistral** model via Ollama. Download eerst Ollama via ollama.com en installeer het als volgt:
+### 2. Install Ollama and Mistral
+This project requires the **Mistral** model via Ollama. First, download Ollama from ollama.com and install it as follows:
 
 ```sh
 ollama run mistral
 ```
 
-### 3. Freshdesk-configuratie
-Maak een bestand `config.py` en voeg je Freshdesk API-sleutel en domein toe:
+### 3. Freshdesk Configuration
+Create a `config.py` file and add your Freshdesk API key and domain:
 
 ```python
+import os
+
 class Config:
-    FRESHDESK_DOMAIN = "jouw_domein.freshdesk.com"
-    FRESHDESK_API_KEY = "jouw_api_sleutel"
+    FRESHDESK_API_KEY = os.getenv('FRESHDESK_API_KEY', 'your_api_key')
+    FRESHDESK_DOMAIN = 'yourcompany.freshdesk.com'
 ```
 
-## 🚀 Gebruik
-Om de CLI-versie te gebruiken:
+## 🚀 Usage
+To use the CLI version:
 
 ```sh
 python email_generator.py
 ```
 
-Voor de GUI-versie:
+For the GUI version:
 
 ```sh
 python email_gui.py
 ```
 
-## 📌 Opmerkingen
-- Zorg ervoor dat je Freshdesk API-sleutel correct is ingesteld.
-- Het project ondersteunt meerdere talen; zorg ervoor dat `prompts.json` correct geconfigureerd is.
-- Lees het gegenereerde e-mailantwoord voordat je het verzendt.
+## 📌 Notes
+- Ensure your Freshdesk API key is set up correctly.
+- The project supports multiple languages; make sure `prompts.json` is properly configured.
+- Review the generated email response before sending it.
 
-## 📜 Licentie
-Dit project wordt uitgebracht onder de GPLv3 licentie. Zie LICENSE voor meer details.
-
+## 📜 License
+This project is released under the GPLv3 license. See LICENSE for more details.
