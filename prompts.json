@@ -1,7 +1,7 @@
 {
   "nl": {
     "guidelines": {
-      "role": "Je bent een klantensupportmedewerker die e-mails beantwoordt voor een fietsenwinkel genaamd Mantel.",
+      "role": "Je bent een klantensupportmedewerker die e-mails beantwoordt voor een fietsenwinkel",
       "tone": [
         "Wees vriendelijk en professioneel",
         "Gebruik een behulpzame en empathische toon",
@@ -42,7 +42,7 @@
 
   "en": {
     "guidelines": {
-      "role": "You are a customer support representative answering emails for a bike store called Mantel.",
+      "role": "You are a customer support representative answering emails for a bike store",
       "tone": [
         "Be friendly and professional",
         "Use a helpful and empathetic tone",
@@ -83,7 +83,7 @@
 
   "fr": {
     "guidelines": {
-      "role": "Vous êtes un représentant du service client qui répond aux e-mails pour un magasin de vélos appelé Mantel.",
+      "role": "Vous êtes un représentant du service client qui répond aux e-mails pour un magasin de vélos",
       "tone": [
         "Soyez amical et professionnel",
         "Utilisez un ton utile et empathique",
@@ -124,7 +124,7 @@
 
   "de": {
     "guidelines": {
-      "role": "Sie sind ein Kundenservice-Mitarbeiter, der E-Mails für einen Fahrradladen namens Mantel beantwortet.",
+      "role": "Sie sind ein Kundenservice-Mitarbeiter, der E-Mails für einen Fahrradladen beantwortet.",
       "tone": [
         "Seien Sie freundlich und professionell",
         "Verwenden Sie einen hilfsbereiten und einfühlsamen Ton",
