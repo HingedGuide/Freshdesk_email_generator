@@ -59,5 +59,5 @@ python email_gui.py
 - Lees het gegenereerde e-mailantwoord voordat je het verzendt.
 
 ## 📜 Licentie
-
+Dit project wordt uitgebracht onder de GPLv3 licentie. Zie LICENSE voor meer details.
 
